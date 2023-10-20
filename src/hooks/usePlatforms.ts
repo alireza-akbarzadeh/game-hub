@@ -9,13 +9,12 @@ export interface Platform {
 }
 const apiClient = new APICLient<Platform>("/platforms/lists/parents");
 
-// const usePlatforms = () => ({ data: platforms, isLoading: false, error: null });
 const usePlatforms = () => {
   return useQuery({
     queryKey: ["platforms"],
     queryFn: apiClient.getAll,
     staleTime: 24 * 60 * 60 * 1000, ///24 Hour
-    initialData: { count: platforms.length, results: platforms },
+    initialData: platforms,
   });
 };
 
