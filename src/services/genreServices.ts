@@ -6,4 +6,4 @@ export interface Genre {
   image_background: string;
 }
 
-// export default new APICLient<Genre>("/genre");
+export default new APICLient<Genre>("/genres");
