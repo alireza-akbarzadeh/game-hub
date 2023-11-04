@@ -1,9 +1,4 @@
+import { Genre } from "../entities/Genre";
 import APICLient from "./api-client";
-
-export interface Genre {
-  id: number;
-  name: string;
-  image_background: string;
-}
 
 export default new APICLient<Genre>("/genres");
