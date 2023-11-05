@@ -5,6 +5,7 @@ import DefinitionItem from "../components/DefinitionItem";
 import ExpandableText from "../components/ExpandableText";
 import useGame from "../hooks/useGame";
 import { GameAttributes } from "../components/GameAttributes";
+import { GameTrailer } from "../components/GameTrailer";
 
 export const GameDetailPage = () => {
   const { slug } = useParams();
@@ -18,6 +19,7 @@ export const GameDetailPage = () => {
       <Heading>{game.name}</Heading>
       <ExpandableText children={game.description_raw} />
       <GameAttributes game={game} />
+      <GameTrailer gameId={game.id} />
     </>
   );
 };
