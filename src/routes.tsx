@@ -1,8 +1,11 @@
 import { createBrowserRouter } from "react-router-dom";
-import { HomePage } from "./pages/HomePage";
-import { GameDetailPage } from "./pages/GameDetailPage";
-import Layout from "./pages/Layout";
 import ErrorPage from "./pages/ErrorPage";
+import { GameDetailPage } from "./pages/GameDetailPage";
+import { HomePage } from "./pages/HomePage";
+import Layout from "./pages/Layout";
+import { Callback } from "./pages/Practice/Callback";
+import { Reducer } from "./pages/Practice/Reducer";
+import { Transition } from "./pages/Practice/Transition";
 
 export const router = createBrowserRouter([
   {
@@ -17,6 +20,10 @@ export const router = createBrowserRouter([
       {
         path: "games/:slug",
         element: <GameDetailPage />,
+      },
+      {
+        path: "practice",
+        element: <Transition />,
       },
     ],
   },
