@@ -3,7 +3,7 @@ import axios from "axios";
 import ms from "ms";
 import { QueryKey } from "./QueryKey";
 
-type Comment = {
+export type Comment = {
   body: string;
   email: string;
   id: number;
