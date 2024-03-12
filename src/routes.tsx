@@ -11,6 +11,7 @@ import { LayoutEffect } from "./pages/Practice/LayoutEffect";
 import { DebugValue } from "./pages/Practice/DebugValue";
 import { IndexDB } from "./pages/Practice/IndexDB";
 import { CustomHook } from "./pages/Practice/Custome-Hook";
+import { Review } from "./pages";
 
 export const router = createBrowserRouter([
   {
@@ -29,6 +30,10 @@ export const router = createBrowserRouter([
       {
         path: "practice",
         element: <CustomHook />,
+      },
+      {
+        path: "review",
+        element: <Review />,
       },
     ],
   },

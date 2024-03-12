@@ -4,4 +4,5 @@ export const QueryKey = {
   TRAILERS: "trailers",
   PLATFORM: "platforms",
   SCREEN_SHOTS: "screenshots",
+  COMMENTS: "comment",
 };
