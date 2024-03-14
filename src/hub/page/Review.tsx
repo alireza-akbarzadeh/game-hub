@@ -1,17 +1,9 @@
-import {
-  Card,
-  CardBody,
-  CardHeader,
-  Container,
-  Grid,
-  GridItem,
-  Text,
-} from "@chakra-ui/react";
-import { SkeletonCard } from "../components/Review/ReviewSkeleton";
-import { useGetComment } from "../hooks/useGetComment";
-import ReviewForm from "../components/Review/ReviewForm";
-import { ReviewList } from "../components/Review/ReviewList";
-import { usePostComment } from "../hooks/usePostComment";
+import { Container, Grid } from "@chakra-ui/react";
+import { useGetComment } from "../../hooks/useGetComment";
+import { usePostComment } from "../../hooks/usePostComment";
+import ReviewForm from "../Review/ReviewForm";
+import { ReviewList } from "../Review/ReviewList";
+import { SkeletonCard } from "../Review/ReviewSkeleton";
 
 const Review = () => {
   const { data, isLoading } = useGetComment();

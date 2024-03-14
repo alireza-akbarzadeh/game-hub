@@ -1,5 +1,5 @@
 import React from "react";
-import useGenres from "../../hooks/useGenres";
+import useGenres from "../hooks/useGenres";
 import { openDB } from "idb";
 
 export const IndexDB = () => {

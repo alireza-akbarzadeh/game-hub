@@ -3,14 +3,14 @@ import ErrorPage from "./pages/ErrorPage";
 import { GameDetailPage } from "./pages/GameDetailPage";
 import { HomePage } from "./pages/HomePage";
 import Layout from "./pages/Layout";
-import { Callback } from "./pages/Practice/Callback";
-import { Reducer } from "./pages/Practice/Reducer";
-import { Transition } from "./pages/Practice/Transition";
-import { DefferValue } from "./pages/Practice/DefferValue";
-import { LayoutEffect } from "./pages/Practice/LayoutEffect";
-import { DebugValue } from "./pages/Practice/DebugValue";
-import { IndexDB } from "./pages/Practice/IndexDB";
-import { CustomHook } from "./pages/Practice/Custome-Hook";
+import { Callback } from "./hub/Callback";
+import { Reducer } from "./hub/Reducer";
+import { Transition } from "./hub/Transition";
+import { DefferValue } from "./hub/DefferValue";
+import { LayoutEffect } from "./hub/LayoutEffect";
+import { DebugValue } from "./hub/DebugValue";
+import { IndexDB } from "./hub/IndexDB";
+import { CustomHook } from "./hub/Custome-Hook";
 import { Review } from "./pages";
 
 export const router = createBrowserRouter([
