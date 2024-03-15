@@ -5,6 +5,7 @@ import ErrorPage from "./pages/ErrorPage";
 import { GameDetailPage } from "./pages/GameDetailPage";
 import { HomePage } from "./pages/HomePage";
 import Layout from "./pages/Layout";
+import { Recursive } from "./hub/page/Recursive";
 
 export const router = createBrowserRouter([
   {
@@ -25,8 +26,8 @@ export const router = createBrowserRouter([
         element: <CustomHook />,
       },
       {
-        path: "review",
-        element: <Review />,
+        path: "recursive",
+        element: <Recursive />,
       },
     ],
   },
