@@ -1,17 +1,10 @@
 import { createBrowserRouter } from "react-router-dom";
+import { CustomHook } from "./hub/Custome-Hook";
+import { Review } from "./pages";
 import ErrorPage from "./pages/ErrorPage";
 import { GameDetailPage } from "./pages/GameDetailPage";
 import { HomePage } from "./pages/HomePage";
 import Layout from "./pages/Layout";
-import { Callback } from "./hub/Callback";
-import { Reducer } from "./hub/Reducer";
-import { Transition } from "./hub/Transition";
-import { DefferValue } from "./hub/DefferValue";
-import { LayoutEffect } from "./hub/LayoutEffect";
-import { DebugValue } from "./hub/DebugValue";
-import { IndexDB } from "./hub/IndexDB";
-import { CustomHook } from "./hub/Custome-Hook";
-import { Review } from "./pages";
 
 export const router = createBrowserRouter([
   {
